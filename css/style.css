@@ -8,7 +8,8 @@
     --color-bg-rgb: 245, 244, 240;
     --color-text: #1a1a1a;
     --color-light: #ffffff;
-    --color-dark: #000000;
+    --color-dark: #1a1a1a;
+    --color-dark-text: #f5f4f0;
     --color-accent: #2563eb; /* Sharp, vibrant blue */
     --font-main: 'Space Grotesk', sans-serif;
     --transition: all 0.3s ease-out;
@@ -19,7 +20,8 @@
     --color-bg-rgb: 26, 26, 26;
     --color-text: #f5f4f0;
     --color-light: #2d2d2d;
-    --color-dark: #ffffff;
+    --color-dark: #0a0a0a;
+    --color-dark-text: #f5f4f0;
     --color-accent: #60a5fa;
 }
 
@@ -39,6 +41,7 @@ body {
     color: var(--color-text);
     font-family: var(--font-main);
     line-height: 1.5;
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
 /* Typography Foundation */
@@ -73,6 +76,7 @@ p {
 
 .bg-light {
     background-color: var(--color-light);
+    transition: background-color 0.3s ease-out;
 }
 
 .spacer {
@@ -402,8 +406,9 @@ p {
 
 /* Contact Footer */
 .bg-dark {
-    background-color: var(--color-text);
-    color: var(--color-bg);
+    background-color: var(--color-dark);
+    color: var(--color-dark-text);
+    transition: background-color 0.3s ease-out, color 0.3s ease-out;
 }
 
 .footer-section {
@@ -440,7 +445,7 @@ p {
 }
 
 .footer-details p {
-    color: var(--color-bg);
+    color: var(--color-dark-text);
     opacity: 0.7;
     margin-bottom: 1rem;
 }
@@ -468,7 +473,7 @@ p {
     padding-top: 1.5rem;
     border-top: 1px solid rgba(255, 255, 255, 0.1);
     font-size: 0.9rem;
-    color: var(--color-bg);
+    color: var(--color-dark-text);
     opacity: 0.7;
 }
 
