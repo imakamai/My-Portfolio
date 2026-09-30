@@ -310,6 +310,46 @@ p {
     font-size: 1.2rem;
 }
 
+.project-features {
+    margin: 1.25rem 0;
+    padding-left: 1.25rem;
+    line-height: 1.7;
+}
+
+.project-details .project-roadmap {
+    font-size: 1rem;
+}
+
+.project-gallery {
+    grid-column: 1 / -1;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1.5rem;
+}
+
+.project-gallery a {
+    display: block;
+    border: 1px solid var(--color-text);
+    overflow: hidden;
+}
+
+.project-gallery a:focus-visible {
+    outline: 3px solid var(--color-accent);
+    outline-offset: 4px;
+}
+
+.project-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.project-gallery figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    opacity: 0.8;
+}
+
 .project-links {
     margin-top: 1.5rem;
     display: flex;
@@ -333,6 +373,10 @@ p {
 }
 
 @media (max-width: 768px) {
+    .project-gallery {
+        grid-template-columns: 1fr;
+    }
+
     .project-item {
         grid-template-columns: 1fr;
         gap: 1rem;

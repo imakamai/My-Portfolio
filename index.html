@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Vanja Cekić | Portfolio</title>
     <!-- Favicon -->
-    <link rel="icon" type="image/png" href="imgs/Vanja_IT_engineer_logo_design-removebg-preview.png">
+    <link rel="icon" type="image/png" href="imgs/Vanja_IT_engineer_logo_design-removebg-preview.png?v=2">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -68,6 +68,36 @@
                 <h2 class="section-title">Projects.</h2>
             </div>
             <div class="projects-list">
+                <!-- Kaimai Project -->
+                <article class="project-item project-featured">
+                    <div class="project-info">
+                        <h3>Kaimai</h3>
+                        <p class="project-label">Project Planning Web Application</p>
+                    </div>
+                    <div class="project-details">
+                        <p>Designed and developed a project planning workspace for programmers and small teams. Organize software projects into processes and tasks, set priorities, and track progress through timelines and status cards.</p>
+                        <ul class="project-features">
+                            <li>Project overviews and detailed planning pages</li>
+                            <li>Process progress tracking and prioritized tasks</li>
+                            <li>Profile settings and three themes: White, Wine, and Black</li>
+                        </ul>
+                        <p class="project-roadmap">Planned updates: a desktop app and an AI generator that turns project descriptions, images, and documents into processes and tasks.</p>
+                    </div>
+                    <div class="project-gallery">
+                        <figure>
+                            <a href="imgs/kaimai-overview.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Kaimai project overview">
+                                <img src="imgs/kaimai-overview.png" alt="Kaimai landing page showing the project planner and its planning features" loading="lazy" width="2508" height="1322">
+                            </a>
+                            <figcaption>Project workspace and planning features</figcaption>
+                        </figure>
+                        <figure>
+                            <a href="imgs/kaimai-themes-roadmap.png" target="_blank" rel="noopener noreferrer" aria-label="Open full-size Kaimai themes and roadmap">
+                                <img src="imgs/kaimai-themes-roadmap.png" alt="Kaimai White, Wine, and Black themes with a preview of the planned AI project generator" loading="lazy" width="2495" height="1327">
+                            </a>
+                            <figcaption>Three themes and the planned AI generator</figcaption>
+                        </figure>
+                    </div>
+                </article>
                 <!-- Project 1 -->
                 <div class="project-item">
                     <div class="project-info">
@@ -126,8 +156,16 @@
                     <p>HTML5, CSS3, JavaScript, React, Angular</p>
                 </div>
                 <div class="skill-category">
+                    <h3>Embedded Development</h3>
+                    <p>C, Keil C51, Silicon Labs C8051F120, UART, SPI, Timers & Interrupts, OLED Graphics, Flash Memory Management</p>
+                </div>
+                <div class="skill-category">
                     <h3>Architecture & Methodology</h3>
-                    <p>Object-Oriented Programming (OOP), Software Development Life Cycle (SDLC), Entity-Component-System (ECS)</p>
+                    <p>Object-Oriented Programming (OOP), Software Development Life Cycle (SDLC), Entity-Component-System (ECS), Layered Bare-Metal Architecture, Interrupt-Driven State Machines, Hardware Abstraction Layer (HAL), Board Support Package (BSP)</p>
+                </div>
+                <div class="skill-category">
+                    <h3>Embedded Data Handling</h3>
+                    <p>UART ASCII Protocols, Input Validation, Buffer Overflow Protection, Safe String Handling, Critical Sections, FIFO Storage</p>
                 </div>
                 <div class="skill-category">
                     <h3>Automation</h3>
@@ -144,6 +182,11 @@
             <div class="timeline-container">
                 <div class="timeline-box">
                     <p class="timeline-category">Professional Internships</p>
+                    <div class="timeline-entry">
+                        <h4>Lmb SOFT</h4>
+                        <p class="role">Embedded Software Development Intern</p>
+                        <p class="desc">Developed firmware in C using Keil C51 for the Silicon Labs C8051F120 microcontroller. Implemented barcode reception over UART, validation and FIFO storage in Flash memory, and an OLED interface over SPI using a layered, interrupt-driven state machine architecture.</p>
+                    </div>
                     <div class="timeline-entry">
                         <h4>Sky Soft d.o.o.</h4>
                         <p class="role">API & AI Solutions Developer <span>— Niš, Serbia</span></p>
